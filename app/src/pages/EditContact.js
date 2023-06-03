@@ -47,26 +47,29 @@ const EditContact = () => {
     }
   };
 
-  useEffect(async () => {
-    setLoading(true);
-    try {
-      const res = await fetch(`http://localhost:8000/api/contact/${id}`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
-      const result = await res.json();
-      setUserDetails({
-        name: result.name,
-        email: result.email,
-        address: result.address,
-        phone: result.phone,
-      });
-      setLoading(false);
-    } catch (err) {
-      console.log(err);
+  useEffect( () => {
+    const editData = async() =>{
+      setLoading(true);
+      try {
+        const res = await fetch(`http://localhost:8000/api/contact/${id}`, {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        });
+        const result = await res.json();
+        setUserDetails({
+          name: result.name,
+          email: result.email,
+          address: result.address,
+          phone: result.phone,
+        });
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+      }
     }
+    editData()
   }, []);
 
   return (
