@@ -6,21 +6,21 @@ contacts in real-time without having to refresh the page.
 # Screenshots
 
 Login Page
-![Login page](screenshots/login.png)
+![Login page](screenshots/login.jpg)
 
 Home Page
-![Home page](screenshots/home.png)
+![Home page](screenshots/home.jpg)
 
 Create (Creates contacts)
-![Create Contacts](screenshots/create.png)
+![Create Contacts](screenshots/create.jpg)
 
 All Contacts (Displays all contacts)
-![View Contacts](screenshots/allcontacts.png)
+![View Contacts](screenshots/allcontacts.jpg)
 
 Modify contacts
-![Modify Contacts](screenshots/modify1.png)
+![Modify Contacts](screenshots/modify1.jpg)
 
-![Modify Contacts](screenshots/modify2.png)
+![Modify Contacts](screenshots/modify2.jpg)
 
 Updated Contacts
-![Modify Contacts](screenshots/modify3.png)
+![Modify Contacts](screenshots/modify3.jpg)
